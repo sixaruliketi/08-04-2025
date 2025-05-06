@@ -29,9 +29,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:backgroundTint="@android:color/holo_orange_dark"
-        app:layout_constraintBottom_toTopOf="@id/photoIV"
+        android:clickable="true"
         android:padding="15dp"
         android:src="@drawable/ic_cart"
+        app:layout_constraintBottom_toTopOf="@id/photoIV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,10 +52,11 @@
         android:id="@+id/officialStoreBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/textView"
         android:backgroundTint="@android:color/holo_orange_light"
+        android:clickable="true"
         android:text="official store"
         android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/textView"
         app:layout_constraintStart_toStartOf="@+id/photoIV"
         app:layout_constraintTop_toBottomOf="@+id/photoIV" />
 
@@ -63,24 +65,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:clickable="true"
         android:text="free delivery"
         android:textAllCaps="false"
-        android:backgroundTint="@android:color/holo_blue_dark"
         app:layout_constraintBottom_toBottomOf="@+id/officialStoreBtn"
         app:layout_constraintStart_toEndOf="@+id/officialStoreBtn"
         app:layout_constraintTop_toTopOf="@+id/officialStoreBtn" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Discusses the factors that make a logo successful by analyzing the research, brainstorming, sketching, and stylistic experiments that led to its development"
-        app:layout_constraintStart_toStartOf="@id/officialStoreBtn"
-        app:layout_constraintEnd_toEndOf="@id/photoIV"
-        app:layout_constraintTop_toBottomOf="@id/officialStoreBtn"
+        android:textColor="#808080"
         android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@id/linearLayout"
-        android:id="@+id/textView"
-        android:textColor="#808080"/>
+        app:layout_constraintEnd_toEndOf="@id/photoIV"
+        app:layout_constraintStart_toStartOf="@id/officialStoreBtn"
+        app:layout_constraintTop_toBottomOf="@id/officialStoreBtn" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -112,13 +115,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_orange_light"
+        android:gravity="start|center"
         android:text="Offers"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@id/linearLayout2"
-        android:gravity="start|center"
         android:textColor="@color/white"
         android:textSize="19sp"
         android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout2"
         app:layout_constraintEnd_toEndOf="@id/textView"
         app:layout_constraintStart_toStartOf="@id/textView"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
@@ -168,6 +171,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_button"
+        android:clickable="true"
         android:padding="10dp"
         android:src="@drawable/ic_home"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -180,6 +184,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
         android:background="@drawable/bg_button"
+        android:clickable="true"
         android:padding="10dp"
         android:src="@drawable/ic_search"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton"
@@ -189,11 +194,11 @@
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_button"
         android:layout_marginEnd="10dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:clickable="true"
         android:text="add To Cart"
         android:textAllCaps="false"
-        android:backgroundTint="@android:color/holo_orange_light"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
         app:layout_constraintEnd_toStartOf="@+id/imageButton2"
         app:layout_constraintStart_toStartOf="@+id/linearLayout2"
